@@ -26,6 +26,20 @@ rm -rf claude-memory-keeper
 - **Decisions and preferences** - Key learnings, choices, and working patterns in `project_knowledge.md`
 - **Quick context recovery** - Link metadata breadcrumbs to understand what happened and continue
 
+## 🔄 How to Continue a Conversation
+
+When context runs out or you start a new Claude session:
+
+```
+Read .claude/ai_history/conversations/conversation_XXX/metadata.md and continue where we left off
+```
+
+The metadata file contains everything Claude needs:
+- Which files were involved
+- What decisions were made  
+- Current state and next steps
+- Problems encountered and solutions tried
+
 ## ⚙️ Editing the System
 
 To modify any part of the `.claude/` folder system:
