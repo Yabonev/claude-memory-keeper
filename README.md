@@ -23,8 +23,7 @@ rm -rf claude-memory-keeper
 
 - **Conversation breadcrumbs** - What happened, which files touched, decisions made, searches done in `metadata.md` per conversation
 - **Full conversation history** - Complete exchanges in `.claude/ai_history/conversations/`
-- **Critical decisions** - Key learnings and patterns in `project_knowledge.md`
-- **Working patterns** - Your preferences and conventions Claude learns
+- **Decisions and preferences** - Key learnings, choices, and working patterns in `project_knowledge.md`
 - **Quick context recovery** - Link metadata breadcrumbs to understand what happened and continue
 
 ## ⚙️ Editing the System
