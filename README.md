@@ -1,59 +1,46 @@
 # 🧠 Claude Memory Keeper
 
-**Give Claude Code persistent memory across sessions** ✨
+**The Problem:** Claude forgets everything when context runs out. You lose critical decisions, working patterns, and conversation history.
 
-Drop this into any project and Claude instantly remembers everything - your decisions, patterns, preferences, and context. Every new session picks up exactly where you left off.
+**The Solution:** A `.claude/` folder system that saves learning and maintains conversation history across sessions.
 
 ## 🚀 Quick Start
 
 ```bash
-# 1. Add to your project
+# Add to your project
 git clone https://github.com/Yabonev/claude-memory-keeper.git
 cp -r claude-memory-keeper/.claude .
 
-# 2. Start Claude Code and run:
+# Initialize in Claude Code
 /project:init_claude_memory_keeper
-
-# 3. Work normally - Claude now has permanent memory
 ```
 
-## ✨ What You Get
+## 📁 What Gets Saved
 
-- **🎯 Context Awareness** - Claude knows what's relevant for each task
-- **📚 Living Knowledge** - Learns your patterns and preferences  
-- **⚡ Smart Automation** - Suggests custom commands for repetitive work
-- **🔄 Perfect Handoffs** - New Claude sessions start with full context
-- **🎛️ Strategic Delegation** - Breaks complex tasks into parallel execution
+- **Critical decisions** - Architecture choices, patterns that worked/failed
+- **Conversation history** - Full prompt exchanges you can reference later  
+- **Working preferences** - Your coding style, tool preferences, workflow patterns
+- **Context continuity** - New Claude sessions load relevant knowledge automatically
 
-## 🌟 The Magic
+## 🔧 Real Problems This Solves
 
-**Before:** Every Claude session starts from scratch  
-**After:** Claude remembers your entire project history and working style
+- **"Wait, what did we decide about the database schema?"** → Saved in knowledge base
+- **"That refactoring approach we tried last week - did it work?"** → Check conversation history
+- **"New Claude session, explaining the codebase again..."** → Auto-loads project context
+- **"Which prompt got the best results for this task?"** → Searchable conversation logs
 
-Perfect for:
-- 💻 Software projects that evolve over time
-- 📊 Research with complex context requirements  
-- ✍️ Content creation with consistent voice
-- 🔧 Any workflow where context matters
+## 📋 How It Works
 
-## 🛠️ How It Works
+The system tracks conversations and extracts knowledge automatically:
+- Saves important exchanges in `.claude/ai_history/conversations/`
+- Updates `.claude/ai_history/project_knowledge.md` with decisions and patterns
+- New sessions load relevant context based on current task
+- You can reference specific conversations when something worked well
 
-The `.claude/` folder creates an intelligent system:
-- **Memory management** tracks decisions and patterns
-- **Tool optimization** learns your workflow preferences
-- **Custom commands** automate repetitive tasks
-- **Sub-agent coordination** handles complex multi-step work
+## ⚙️ Usage
 
-## 🎮 Usage
-
-Just work normally. Claude automatically:
-- Saves important conversations and decisions
-- Applies relevant knowledge from previous sessions
-- Suggests workflow improvements
-- Coordinates complex tasks intelligently
-
-Want to modify the system? Run `/project:edit_claude_system` for comprehensive editing guidance.
+Work normally. Claude saves critical learning and conversation history automatically. When context runs out or you start a new session, run `/project:init_claude_memory_keeper` to load everything back.
 
 ---
 
-**Transform Claude from a smart assistant to a persistent AI teammate** 🤖✨
+Stops the frustrating cycle of re-explaining your project every time.
