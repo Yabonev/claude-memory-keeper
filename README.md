@@ -21,11 +21,11 @@ rm -rf claude-memory-keeper
 
 ## 📁 What Gets Saved
 
-- **Complete conversation context** - Files, decisions, searches, insights, problems, solutions in `metadata.md` per conversation
-- **Conversation history** - Individual exchanges in `.claude/ai_history/conversations/`
+- **Conversation breadcrumbs** - What happened, which files touched, decisions made, searches done in `metadata.md` per conversation
+- **Full conversation history** - Complete exchanges in `.claude/ai_history/conversations/`
 - **Critical decisions** - Key learnings and patterns in `project_knowledge.md`
 - **Working patterns** - Your preferences and conventions Claude learns
-- **Instant context recovery** - Link one metadata file to restore complete conversation state
+- **Quick context recovery** - Link metadata breadcrumbs to understand what happened and continue
 
 ## ⚙️ Editing the System
 
