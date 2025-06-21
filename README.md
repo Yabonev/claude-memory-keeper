@@ -1,8 +1,8 @@
 # 🧠 Claude Memory Keeper
 
-**The Problem:** Claude forgets everything when context runs out. You lose critical decisions, working patterns, and conversation history.
+I got tired of losing context every time Claude hit token limits. Critical decisions, working patterns, conversation history - all gone. Had to re-explain my entire project every new session.
 
-**The Solution:** A `.claude/` folder system that saves learning and maintains conversation history across sessions.
+So I built this `.claude/` folder system to fix it.
 
 ## 🚀 Quick Start
 
@@ -15,32 +15,32 @@ cp -r claude-memory-keeper/.claude .
 /project:init_claude_memory_keeper
 ```
 
-## 📁 What Gets Saved
+## 📁 What I Save
 
-- **Critical decisions** - Architecture choices, patterns that worked/failed
-- **Conversation history** - Full prompt exchanges you can reference later  
-- **Working preferences** - Your coding style, tool preferences, workflow patterns
-- **Context continuity** - New Claude sessions load relevant knowledge automatically
+- **Critical decisions** - Architecture choices, what worked/failed and why
+- **Full conversation logs** - Every prompt exchange, searchable and referenceable
+- **My working patterns** - Coding style, preferences, workflow quirks Claude learns
+- **Project context** - New sessions auto-load relevant knowledge
 
-## 🔧 Real Problems This Solves
+## 🔧 Problems This Actually Solves
 
-- **"Wait, what did we decide about the database schema?"** → Saved in knowledge base
-- **"That refactoring approach we tried last week - did it work?"** → Check conversation history
-- **"New Claude session, explaining the codebase again..."** → Auto-loads project context
-- **"Which prompt got the best results for this task?"** → Searchable conversation logs
+- **"What did we decide about that API structure?"** → It's in the knowledge base
+- **"That optimization we tried - did it work?"** → Check the conversation history  
+- **"New session, time to explain everything again..."** → Nope, auto-loads context
+- **"Which prompt worked best for this type of task?"** → Searchable logs
 
 ## 📋 How It Works
 
-The system tracks conversations and extracts knowledge automatically:
-- Saves important exchanges in `.claude/ai_history/conversations/`
-- Updates `.claude/ai_history/project_knowledge.md` with decisions and patterns
-- New sessions load relevant context based on current task
-- You can reference specific conversations when something worked well
+I set it up so Claude automatically:
+- Saves important conversations in `.claude/ai_history/conversations/`
+- Updates `.claude/ai_history/project_knowledge.md` with key decisions
+- Loads relevant context when starting new sessions
+- Lets me reference specific conversations that went well
 
 ## ⚙️ Usage
 
-Work normally. Claude saves critical learning and conversation history automatically. When context runs out or you start a new session, run `/project:init_claude_memory_keeper` to load everything back.
+Just work normally. When context runs out or you start fresh, run `/project:init_claude_memory_keeper` and Claude picks up where you left off.
 
 ---
 
-Stops the frustrating cycle of re-explaining your project every time.
+No more explaining the same project over and over.
