@@ -1,155 +1,126 @@
 # Claude Memory Keeper
 
-**Enhanced context-aware system** for seamless AI agent collaboration with intelligent knowledge management.
+**Enhanced context-aware memory management system** for Claude Code with intelligent conversation tracking and seamless AI agent collaboration.
 
-## What It Does
+## What This Does
 
-- **Context-aware knowledge tracking** with relevance evaluation
-- **Coded reference system** for organized knowledge (PROJECT_STRUCTURE_01, REFACTORING_02, etc.)
-- **Multi-context support** for different chat purposes (research, implementation, documentation, etc.)
-- **Usage logging** to track what knowledge AI agents access
-- **Seamless handoffs** between AI agents with smart context filtering
-- **Living documentation** that evolves intelligently with your project
+This is a **template repository** that gives Claude Code agents persistent memory and intelligent workflow capabilities. Drop it into any project and Claude immediately gains:
 
-## Key Features
+- **Context-aware knowledge management** - Knows what's relevant for each task
+- **Living documentation** that evolves with your project
+- **Strategic delegation** with sub-agent task coordination
+- **Custom slash commands** for workflow automation
+- **Cross-session continuity** - Every new Claude agent starts with full project context
 
-### 🧠 Context-Aware Knowledge
-AI agents evaluate knowledge relevance before use: *"Is PROJECT_STRUCTURE_01 relevant to my current image generation task?"*
+## Quick Start
 
-### 🏷️ Reference Coding System
-All knowledge gets organized codes:
-- **PROJECT_STRUCTURE_XX** - Architecture, setup patterns
-- **IMPLEMENTATION_XX** - Code patterns, technical approaches
-- **REFACTORING_XX** - Cleanup, optimization patterns
-- **RESEARCH_XX** - Investigation findings, analysis
-- **DOCUMENTATION_XX** - Writing patterns, templates
-- **TEXT_GEN_XX** - Content creation, writing styles
-- **IMAGE_GEN_XX** - Visual creation, prompt engineering
-- **DEBUG_XX** - Problem-solving, troubleshooting
-- **WORKFLOW_XX** - Process patterns, methodology
-
-### 🎯 Multi-Context Support
-Tag knowledge by use case:
-- `[RESEARCH]` - Codebase analysis, investigation
-- `[IMPLEMENT]` - Feature development, coding
-- `[REFACTOR]` - Code cleanup, optimization
-- `[DOCUMENT]` - Writing docs, guides
-- `[TEXT_GEN]` - Content creation, copywriting
-- `[IMAGE_GEN]` - Visual creation, design
-- `[DEBUG]` - Problem solving, troubleshooting
-- `[WORKFLOW]` - Process improvement, methodology
-
-## Quick Setup
-
-1. **Copy to your project:**
-```
-your-project/
-├── .claude/
-│   ├── ai_history/
-│   │   ├── CLAUDE.md
-│   │   ├── project_knowledge.md
-│   │   ├── tracking_instructions.md
-│   │   └── conversations/
-│   └── commands/
-│       └── edit_ai_history.md
-└── README.md
+### 1. Clone to Your Project
+```bash
+git clone https://github.com/Yabonev/claude-memory-keeper.git
+cd your-project
+cp -r claude-memory-keeper/.claude .
 ```
 
-2. **Start any Claude session with:**
+### 2. Initialize the System
+Start any Claude Code session and run:
 ```
-The enhanced Claude Memory Keeper system is active.
-Begin tracking our conversation with context-aware knowledge management.
-```
-
-## Context Feeding Patterns
-
-### Project Continuation
-```
-Review .claude/ai_history/project_knowledge.md
-Focus on [IMPLEMENT] tagged knowledge for today's coding session
-Apply IMPLEMENTATION_03 patterns established previously
+/project:init_claude_memory_keeper
 ```
 
-### Context-Specific Handoff
+### 3. Start Working
+That's it. Claude now has persistent memory and will:
+- Track important decisions and patterns
+- Remember your preferences and working style
+- Suggest automations for repetitive tasks
+- Maintain context across sessions
+- Coordinate complex multi-step work
+
+## How It Works
+
+### The `.claude/` Folder Structure
 ```
-Load context from project_knowledge.md
-Use case: [RESEARCH] - analyzing codebase architecture
-Apply only PROJECT_STRUCTURE_XX and RESEARCH_XX knowledge
+.claude/
+├── CLAUDE.md                    # Integration hub - coordinates everything
+├── ai_history/                  # Memory management
+│   ├── CLAUDE.md               # Memory system overview
+│   ├── core/                   # Templates and instructions
+│   └── conversations/          # Conversation tracking
+├── claude_code/                # Tool optimization
+│   ├── CLAUDE.md               # Best practices overview
+│   ├── settings.md             # Tool usage guidance
+│   └── claude_md_principles.md # System design principles
+├── commands/                   # Custom workflows
+│   ├── CLAUDE.md               # Commands overview
+│   ├── init_claude_memory_keeper.md
+│   └── edit_claude_system.md
+└── sub-agent-tasks/            # Parallel execution outputs
+    └── CLAUDE.md               # Task coordination
 ```
 
-### Multi-Context Repository
+### Key Features
+
+**🧠 Context-Aware Knowledge**
+- Claude evaluates what knowledge is relevant before applying it
+- No information overload - only uses what matters for the current task
+
+**🎯 Strategic Delegation**
+- Complex tasks get broken down and executed in parallel
+- Sub-agent outputs are saved and coordinated intelligently
+
+**⚡ Custom Automation**
+- Repetitive patterns become custom slash commands
+- Workflows evolve and improve over time
+
+**📚 Living Documentation**
+- Knowledge base grows and adapts with your project
+- Captures decisions, patterns, and lessons learned
+
+## Usage Patterns
+
+### Starting a New Session
 ```
-Today's focus: [IMAGE_GEN] - creating visual content
-Filter knowledge: Use only IMAGE_GEN_XX and TEXT_GEN_XX entries
-Ignore code-related knowledge for this session
+/project:init_claude_memory_keeper
 ```
+Claude loads the complete system and asks about your project goals.
 
-### Knowledge Reference Usage
-```
-Reference REFACTORING_05 for cleanup patterns
-Apply WORKFLOW_02 for task management approach
-Log usage in knowledge base
-```
+### Continuing Previous Work
+Claude automatically loads existing knowledge and picks up where you left off.
 
-## Enhanced File Structure
+### Complex Multi-Step Tasks
+Claude uses strategic delegation, breaking work into parallel sub-tasks and coordinating results.
 
-### Core System Files
-- `.claude/ai_history/CLAUDE.md` - Enhanced auto-load with context awareness
-- `.claude/ai_history/project_knowledge.md` - Coded knowledge with use case tags
-- `.claude/ai_history/tracking_instructions.md` - Core protocol for AI agents
-- `.claude/commands/edit_ai_history.md` - Maintenance guide
-
-### Dynamic Files
-- `.claude/ai_history/conversations/conversation_XXX/` - Individual chat tracking
-- Knowledge usage logs within project_knowledge.md
-- Context-filtered knowledge entries
-
-## Success Indicators
-
-- ✅ AI agents use only relevant knowledge for current context
-- ✅ Different chat purposes don't contaminate each other
-- ✅ Knowledge is easily searchable by reference codes
-- ✅ Usage patterns are transparent and logged
-- ✅ New AI agents understand project context immediately
-- ✅ Complex multi-context projects maintain clarity
+### Repetitive Workflows
+Claude suggests creating custom commands for patterns it notices.
 
 ## Advanced Usage
 
-### Knowledge Management
-```
-# Add new knowledge with proper coding
-IMPLEMENTATION_15: Database Connection Pooling
-Use case: [IMPLEMENT]
-Context: When building high-performance APIs
-```
+### Context Filtering
+The system uses tags like `[RESEARCH]`, `[IMPLEMENT]`, `[REFACTOR]` to apply only relevant knowledge.
 
-### Context Evaluation
-```
-# AI agent thinking process
-"Is REFACTORING_03 relevant to my current [TEXT_GEN] task? 
-No - skipping code cleanup patterns for content creation."
-```
+### Reference Coding
+Knowledge gets organized with descriptive codes for easy retrieval and application.
 
-### Usage Tracking
-```
-# Automatic logging in project_knowledge.md
-[2025-06-21] Used IMAGE_GEN_02 for prompt engineering task
-[2025-06-21] Used WORKFLOW_04 for project planning session
-```
+### Cross-Component Integration
+All system parts work together - memory informs tool usage, which creates automation opportunities.
+
+## Template Philosophy
+
+This is designed as a **universal template** that adapts to any project type:
+- Software development
+- Research projects  
+- Content creation
+- Data analysis
+- System administration
+- Any workflow that benefits from persistent AI memory
 
 ## System Maintenance
 
-See `.claude/commands/edit_ai_history.md` for comprehensive maintenance instructions including:
-- How to add new knowledge categories
-- Updating reference codes
-- Managing multi-context knowledge
-- System expansion procedures
+Use `/project:edit_claude_system` for comprehensive editing guidance when you need to modify or extend the system.
 
-## Migration from Previous Version
+## Getting Started
 
-1. Move `CLAUDE.MD` to `.claude/ai_history/CLAUDE.md`
-2. Enhance `project_knowledge.md` with reference codes and use case tags
-3. Add `.claude/commands/edit_ai_history.md` for maintenance
-4. Update conversation folders to new structure
+1. **Copy the `.claude/` folder** to your project
+2. **Run `/project:init_claude_memory_keeper`** in Claude Code
+3. **Start working** - the system adapts to your project automatically
 
-The enhanced system maintains backward compatibility while adding powerful new features for intelligent knowledge management.
+The memory keeper learns your patterns, remembers your decisions, and makes every Claude session more intelligent than the last.
