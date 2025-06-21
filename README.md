@@ -8,6 +8,7 @@ This is a conversation and critical knowledge keeper for Claude Code. Once initi
 # Add to your project
 git clone https://github.com/Yabonev/claude-memory-keeper.git
 cp -r claude-memory-keeper/.claude .
+cp claude-memory-keeper/CLAUDE.md .
 
 # Initialize in Claude Code
 /project:init_claude_memory_keeper
