@@ -31,6 +31,10 @@ rm -rf claude-memory-keeper
 When context runs out or you start a new Claude session:
 
 ```
+# First, initialize the memory system
+/project:init_claude_memory_keeper
+
+# Then link to specific conversation
 Read .claude/ai_history/conversations/conversation_XXX/metadata.md and continue where we left off
 ```
 
