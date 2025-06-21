@@ -34,8 +34,13 @@ When context runs out or you start a new Claude session:
 # First, initialize the memory system
 /project:init_claude_memory_keeper
 
-# Then link to specific conversation
+# Then link to relevant conversations
 Read .claude/ai_history/conversations/conversation_XXX/metadata.md and continue where we left off
+
+# For multiple related conversations
+Read .claude/ai_history/conversations/conversation_001/metadata.md
+Read .claude/ai_history/conversations/conversation_005/metadata.md
+Now continue based on all this context
 ```
 
 The metadata file contains everything Claude needs:
