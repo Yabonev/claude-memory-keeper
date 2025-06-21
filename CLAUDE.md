@@ -1,37 +1,34 @@
 # Project Discovery & Adaptation Template
 
-## 🎯 PRIMARY TASK FOR NEW AI AGENTS
-**Your first task is to discover what this project is about and adapt this file accordingly.**
+## 🎯 TEMPLATE STATUS: [NEEDS_UPDATE]
+**This file contains template content and MUST be updated with project-specific information.**
 
-1. **Explore the repository**: Use LS, Glob, Grep, Read to understand the codebase
-2. **Ask the user**: "What is the main purpose and goals of this project?"
-3. **Validate understanding**: Confirm your understanding with the user
-4. **Update this file**: Replace this template content with project-specific context
-5. **Begin normal work**: Use the enhanced memory and tool systems below
+**For AI agents**: Run `/project:init_claude_memory_keeper` to properly initialize this system.
+**For manual setup**: Replace all template sections below with actual project context.
 
 ## 🔧 System Integration & Active Features
 @.claude/CLAUDE.md
 
-## 📋 Template Sections to Customize
-*Replace these with project-specific content after discovery*
+## 📋 Template Sections to Replace
+*These MUST be replaced with actual project information*
 
 ### Project Overview
-- **Main objective**: [TO BE DISCOVERED]
-- **Technology stack**: [TO BE DISCOVERED]
-- **Key challenges**: [TO BE DISCOVERED]
-- **Current status**: [TO BE DISCOVERED]
+- **Main objective**: [TEMPLATE - UPDATE WITH ACTUAL PURPOSE]
+- **Technology stack**: [TEMPLATE - UPDATE WITH ACTUAL TECH]
+- **Key challenges**: [TEMPLATE - UPDATE WITH ACTUAL CHALLENGES]
+- **Current status**: [TEMPLATE - UPDATE WITH ACTUAL STATUS]
 
 ### User Preferences & Working Style
-*Update as preferences are discovered during work*
+[TEMPLATE - UPDATE WITH USER'S ACTUAL PREFERENCES AND CONVENTIONS]
 
 ### Technical Context
-*Add project-specific technical details*
+[TEMPLATE - UPDATE WITH PROJECT-SPECIFIC TECHNICAL DETAILS]
 
 ### Team Guidelines
-*Add project-specific conventions and standards*
+[TEMPLATE - UPDATE WITH PROJECT-SPECIFIC CONVENTIONS AND STANDARDS]
 
 ### Domain-Specific Knowledge
-*Add any specialized knowledge relevant to this project*
+[TEMPLATE - UPDATE WITH SPECIALIZED KNOWLEDGE RELEVANT TO THIS PROJECT]
 
 ## 🔄 Living Memory Protocol
 After project discovery, this file should be actively maintained with:

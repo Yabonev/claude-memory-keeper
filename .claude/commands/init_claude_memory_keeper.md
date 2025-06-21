@@ -54,12 +54,31 @@ Confirm you understand:
 - Strategic delegation patterns with structured outputs
 - Cross-component integration workflows
 
-## Step 4: Project Discovery Protocol
-Since this is a template system, immediately begin:
-1. Ask USER about their project's main purpose and goals
-2. Determine if this is template setup or active project work
-3. Update root CLAUDE.md with project-specific context if needed
-4. Begin applying the memory keeper system to their actual work
+## Step 4: Mandatory Project Discovery & Root File Update
+**CRITICAL**: The root CLAUDE.md MUST be updated before proceeding with any work.
+
+### Project Discovery Process:
+1. **Read root CLAUDE.md** - Confirm it contains template content
+2. **Ask USER these required questions**:
+   - "What is the main purpose and goals of this project?"
+   - "What technology stack are you using?"
+   - "What are the key challenges you're facing?"
+   - "What's the current status/stage of the project?"
+   - "Any specific working preferences or conventions I should know?"
+
+3. **Update root CLAUDE.md** - Replace template sections with discovered information:
+   - Project Overview (objective, tech stack, challenges, status)
+   - User Preferences & Working Style
+   - Technical Context specific to this project
+   - Any domain-specific knowledge
+
+4. **Verify update** - Confirm root CLAUDE.md now contains project-specific content
+5. **Only then begin normal work** - Apply memory keeper system to actual project tasks
+
+### Validation Check:
+- [ ] Root CLAUDE.md contains real project information (not template placeholders)
+- [ ] User has confirmed the project context is correct
+- [ ] System is ready for project-specific work
 
 ## Expected Response Format
 ```
@@ -74,13 +93,23 @@ Since this is a template system, immediately begin:
 **Operational Principles Confirmed:**
 [State the core principles you'll follow]
 
-**Ready for Project Discovery:**
-What is the main purpose and goals of this project? I'll adapt the memory keeper system to your specific needs and begin intelligent collaboration.
+**REQUIRED: Project Discovery & Root CLAUDE.md Update**
+I must update the root CLAUDE.md file before proceeding. Please answer these questions:
+
+1. What is the main purpose and goals of this project?
+2. What technology stack are you using?
+3. What are the key challenges you're facing?
+4. What's the current status/stage of the project?
+5. Any specific working preferences or conventions I should know?
+
+After I update the root CLAUDE.md with your project context, I'll begin applying the memory keeper system to your actual work.
 ```
 
 ## Success Criteria
 - All core files loaded and understood
 - System hierarchy and integration clear
 - Operational principles confirmed
-- Ready to adapt template to specific project needs
+- **Root CLAUDE.md updated with actual project context** (not template)
+- User has confirmed project context is correct
+- Ready to apply memory keeper system to real project work
 - Intelligent workflow patterns activated
