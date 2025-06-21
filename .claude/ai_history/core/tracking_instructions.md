@@ -51,18 +51,21 @@ Context-aware knowledge management with intelligent conversation tracking and mu
 
 **Required Files per Conversation:**
 1. **`metadata.md`** - Copy from `core/conversation_metadata_template.md`
-   - Track all files referenced, modified, or created
-   - Document knowledge applied and discovered
-   - List key decisions and next steps
-   - Enable quick context loading for future sessions
+   - **Complete context capture**: Files, decisions, searches, links, insights, problems, solutions
+   - **Current state tracking**: What's working, what's not, next critical steps
+   - **Decision preservation**: Why choices were made, alternatives considered
+   - **Research documentation**: Web searches, documentation lookups, investigations
+   - **Enable seamless continuation**: Everything needed to pick up where left off
 
 2. **`prompt_XXX_description.md`** - Individual exchange records
 
 **Metadata File Benefits:**
-- **Quick Session Startup**: "Read metadata.md and load all referenced files"
-- **File Change Tracking**: See how files evolved during conversation
-- **Knowledge Mapping**: Connect conversation to project knowledge codes
-- **Decision History**: Track important choices and rationale
+- **Complete Context Recovery**: Everything relevant to the conversation in one place
+- **Instant Continuation**: New Claude sessions can immediately understand and continue
+- **Decision Preservation**: Why choices were made, alternatives considered, trade-offs
+- **Research Documentation**: Searches, investigations, external resources consulted
+- **Problem-Solution Tracking**: What worked, what didn't, lessons learned
+- **Current State Awareness**: Exactly where things stand and what needs to happen next
 
 **Individual Prompt Format:**
 ```markdown

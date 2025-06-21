@@ -1,13 +1,14 @@
 # Conversation Metadata Template
 
 ## Overview
-This template creates a metadata file for each conversation folder that tracks all relevant files, links, and knowledge referenced during the conversation. This enables quick context loading in future sessions.
+This template captures ALL context relevant to the current conversation - files, decisions, searches, links, knowledge, insights, and any information critical to understanding and continuing this discussion.
 
 ## Purpose
-- **Quick Context Loading**: Link this file to Claude to auto-load all relevant files
-- **File Change Tracking**: Document how files evolved during the conversation
-- **Knowledge Mapping**: Connect conversation to specific project knowledge
-- **Session Continuity**: Enable easy pickup where conversation left off
+- **Complete Context Capture**: Everything relevant to this conversation in one place
+- **Quick Context Loading**: Link this file to Claude to instantly understand current state
+- **Decision Preservation**: Track why choices were made and alternatives considered
+- **Session Continuity**: Enable seamless pickup where conversation left off
+- **Context Recovery**: Never lose important information when context runs out
 
 ## Template Structure
 
@@ -15,75 +16,110 @@ This template creates a metadata file for each conversation folder that tracks a
 # Conversation [XXX] Metadata
 
 ## Quick Start
-*For new Claude sessions: "Read this metadata file and load all referenced files and knowledge."*
+*For new Claude sessions: "Read this metadata file to understand complete context and continue this conversation seamlessly."*
 
 ## Conversation Summary
-**Purpose**: [Brief description of what this conversation accomplished]
+**Purpose**: [What this conversation is trying to accomplish]
+**Current Focus**: [What we're working on right now]
 **Duration**: [Start date - End date or ongoing]
-**Status**: [Completed/Ongoing/Paused]
+**Status**: [Active/Paused/Completed/Blocked]
 
-## Files Referenced
-*All files that were read, modified, or created during this conversation*
+## Critical Context
+*The most important information to understand this conversation*
+
+**Main Problem**: [Core issue being solved]
+**Current Approach**: [How we're tackling it]
+**Key Constraints**: [Important limitations or requirements]
+**Success Criteria**: [How we'll know we're done]
+
+## Files & Code
+*Everything file-related in this conversation*
 
 ### Modified Files
 - **`path/to/file.ext`**
-  - **Changes**: [Brief description of what changed]
-  - **Why**: [Reason for changes]
-  - **Status**: [Completed/In Progress/Needs Review]
+  - **Changes**: [What changed and why]
+  - **Impact**: [How this affects the overall goal]
+  - **Status**: [Done/In Progress/Needs Review]
 
-### Read Files
-- **`path/to/file.ext`**: [Why this file was relevant]
-- **`path/to/file.ext`**: [Context for reading this file]
+### Read/Analyzed Files
+- **`path/to/file.ext`**: [Why we looked at this and what we learned]
+- **`path/to/file.ext`**: [Context and insights gained]
 
 ### Created Files
-- **`path/to/file.ext`**: [Purpose of new file]
-- **`path/to/file.ext`**: [What this file does]
+- **`path/to/file.ext`**: [Purpose and how it fits the solution]
 
-## Knowledge Applied
-*Reference codes from project_knowledge.md that were used*
+## Knowledge & Insights
+*All knowledge applied and discovered*
 
-- **[KNOWLEDGE_CODE_01]**: [How it was applied in this conversation]
-- **[KNOWLEDGE_CODE_02]**: [Context for using this knowledge]
+### Applied Knowledge
+- **[KNOWLEDGE_CODE]**: [How existing knowledge was used]
+- **[KNOWLEDGE_CODE]**: [Context for applying this knowledge]
 
-## New Knowledge Created
-*Knowledge discovered during this conversation - also add to project_knowledge.md*
+### New Discoveries
+- **[NEW_INSIGHT]**: [What we learned and why it matters]
+- **[PATTERN_FOUND]**: [New pattern discovered and its implications]
+- **[SOLUTION_APPROACH]**: [New approach that worked/didn't work]
 
-### [NEW_KNOWLEDGE_CODE]: [Knowledge Title]
-- **When was this created**: [Context of discovery during this conversation]
-- **Use case**: [USE_CASE_TAG]
-- **Content**: [Brief knowledge summary]
-- **Applied to**: [Which files or decisions this knowledge affected]
+## Searches & Research
+*Web searches, documentation lookups, investigations*
 
-## External References
-*Links, documentation, or resources referenced*
+- **"[search query]"**: [What we were looking for and what we found]
+- **[Documentation URL]**: [Why we checked this and key takeaways]
+- **[Investigation topic]**: [What we researched and conclusions]
 
-- **[URL/Resource]**: [Why this was referenced]
-- **[Documentation link]**: [How this helped the conversation]
+## External Resources
+*Links, tools, references used*
 
-## Key Decisions
-*Important decisions made during this conversation*
+- **[URL/Tool]**: [Purpose and key information gained]
+- **[Documentation/Guide]**: [How this helped solve the problem]
+- **[Reference Material]**: [Why this was relevant]
 
-1. **[Decision]**: [Rationale and impact]
-2. **[Decision]**: [Context and alternatives considered]
+## Decisions Made
+*All important choices and their rationale*
 
-## Next Steps
-*What should happen next or what was left incomplete*
+1. **[Decision]**: 
+   - **Rationale**: [Why we chose this]
+   - **Alternatives**: [What else we considered]
+   - **Impact**: [How this affects the project]
 
-- [ ] [Task or follow-up item]
-- [ ] [Pending decision or work]
+2. **[Decision]**:
+   - **Context**: [Situation that required this choice]
+   - **Trade-offs**: [What we gained/lost with this decision]
 
-## Context for Future Sessions
-*Critical information for continuing this work*
+## Problems & Solutions
+*Issues encountered and how they were resolved*
 
-**Current State**: [Where things stand now]
-**Key Files to Load**: [Most important files for context]
-**Active Concerns**: [Issues or challenges to keep in mind]
+### Solved Problems
+- **[Problem]**: [How we fixed it and lessons learned]
+- **[Error/Issue]**: [Root cause and solution applied]
+
+### Current Blockers
+- **[Blocker]**: [Why this is blocking progress and potential solutions]
+- **[Uncertainty]**: [What we need to figure out]
+
+## Current State
+*Where things stand right now*
+
+**What's Working**: [Progress made and successful approaches]
+**What's Not Working**: [Current challenges or failed attempts]
+**Next Critical Step**: [Most important thing to do next]
+**Open Questions**: [Things we need to resolve]
+
+## Context for Continuation
+*Everything needed to pick up where we left off*
+
+**Mental Model**: [How to think about this problem]
+**Current Strategy**: [Our approach and why]
+**Key Files to Load**: [Most important files for immediate context]
+**Background Context**: [Important history or context to remember]
+**Watch Out For**: [Pitfalls or issues to be aware of]
 ```
 
 ## Usage Instructions
 
 1. **Create for each conversation**: Copy this template to `conversations/conversation_XXX/metadata.md`
-2. **Update throughout conversation**: Keep metadata current as work progresses
-3. **Use for session continuity**: Link this file when starting new sessions
-4. **Reference for knowledge**: Connect to specific project knowledge codes
-5. **Track file evolution**: Document how files changed and why
+2. **Update continuously**: Add context as it becomes relevant - don't wait until the end
+3. **Capture everything**: Searches, insights, failed attempts, decisions, alternatives considered
+4. **Focus on "why"**: Not just what happened, but why it matters and how it affects the goal
+5. **Enable quick continuation**: Write so future Claude can instantly understand and continue
+6. **Be comprehensive**: Better to over-document than lose critical context

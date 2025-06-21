@@ -59,9 +59,10 @@ Before editing ANYTHING in .claude/, verify:
 3. Include "When was this created" context
 4. Update conversation folders for significant exchanges
    - Create `metadata.md` from `core/conversation_metadata_template.md`
-   - Track all files referenced, modified, or created
-   - Document knowledge applied and decisions made
-   - Enable quick context loading for future sessions
+   - **Capture complete context**: Files, decisions, searches, insights, problems, solutions
+   - **Document reasoning**: Why decisions were made, alternatives considered
+   - **Track current state**: What's working, what's not, next critical steps
+   - **Enable instant continuation**: Everything needed for seamless conversation pickup
 5. Log knowledge usage in usage log
 
 ### claude_code/ Component

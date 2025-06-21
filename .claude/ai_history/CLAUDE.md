@@ -20,5 +20,6 @@ Context-aware conversation tracking and knowledge management with coded referenc
 - **Log knowledge usage**: Record what was accessed and when in usage logs
 - **Evaluate relevance**: Ask "Is [KNOWLEDGE_CODE] relevant to my current [USE_CASE]?"
 - **Save conversations**: Create new conversation_XXX folders for session tracking
-- **Track conversation metadata**: Copy `core/conversation_metadata_template.md` to each conversation as `metadata.md`
-- **Enable quick context loading**: Link metadata.md to auto-load all relevant files in future sessions
+- **Track complete conversation context**: Copy `core/conversation_metadata_template.md` to each conversation as `metadata.md`
+- **Capture everything relevant**: Files, decisions, searches, insights, problems, solutions, current state
+- **Enable seamless continuation**: Link metadata.md for instant context recovery and conversation pickup
