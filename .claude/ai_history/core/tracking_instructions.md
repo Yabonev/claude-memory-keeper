@@ -12,13 +12,16 @@ Context-aware knowledge management with intelligent conversation tracking and mu
 .claude/ai_history/
 ├── core/
 │   ├── tracking_instructions.md (this file)
-│   └── project_knowledge_template.md
+│   ├── project_knowledge_template.md
+│   └── conversation_metadata_template.md
 ├── project_knowledge.md (created from template)
 └── conversations/
     ├── conversation_001/
+    │   ├── metadata.md (conversation metadata - files, knowledge, decisions)
     │   ├── prompt_001_description.md
     │   └── prompt_002_description.md
     └── conversation_002/
+        ├── metadata.md
         └── prompt_001_description.md
 ```
 
@@ -46,7 +49,22 @@ Context-aware knowledge management with intelligent conversation tracking and mu
 - Number incrementally from existing folders
 - Document key exchanges that contain reusable insights
 
-**File Format:**
+**Required Files per Conversation:**
+1. **`metadata.md`** - Copy from `core/conversation_metadata_template.md`
+   - Track all files referenced, modified, or created
+   - Document knowledge applied and discovered
+   - List key decisions and next steps
+   - Enable quick context loading for future sessions
+
+2. **`prompt_XXX_description.md`** - Individual exchange records
+
+**Metadata File Benefits:**
+- **Quick Session Startup**: "Read metadata.md and load all referenced files"
+- **File Change Tracking**: See how files evolved during conversation
+- **Knowledge Mapping**: Connect conversation to project knowledge codes
+- **Decision History**: Track important choices and rationale
+
+**Individual Prompt Format:**
 ```markdown
 # [Brief Description]
 

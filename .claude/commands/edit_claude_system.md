@@ -58,6 +58,10 @@ Before editing ANYTHING in .claude/, verify:
 2. Add new knowledge with descriptive reference codes
 3. Include "When was this created" context
 4. Update conversation folders for significant exchanges
+   - Create `metadata.md` from `core/conversation_metadata_template.md`
+   - Track all files referenced, modified, or created
+   - Document knowledge applied and decisions made
+   - Enable quick context loading for future sessions
 5. Log knowledge usage in usage log
 
 ### claude_code/ Component
