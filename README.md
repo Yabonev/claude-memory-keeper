@@ -5,10 +5,14 @@ This is a conversation and critical knowledge keeper for Claude Code. Once initi
 ## 🚀 Setup
 
 ```bash
-# Add to your project
+# Clone the template
 git clone https://github.com/Yabonev/claude-memory-keeper.git
+
+# Copy files to your project
 cp -r claude-memory-keeper/.claude .
 cp claude-memory-keeper/CLAUDE.md .
+
+# Clean up - you own these files now
 rm -rf claude-memory-keeper
 
 # Initialize in Claude Code
